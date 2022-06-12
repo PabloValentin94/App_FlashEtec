@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App_FlashEtec.App">
+    
+    <Application.Resources>
+
+        <ResourceDictionary>
+
+            <Style x:Key="FonteCustomizada" TargetType="Label">
+                
+                <!--
+                
+                    Este conteúdo comentado será adicionado ao projeto em breve.
+                
+                    <Setter Property="FontFamily">
+
+                        <Setter.Value>
+
+                            Como esse aplicativo não possui a versão IOS, não mudaremos a fonte do IOS, mas
+                            caso quisessemos fazer isso, basta adicionar IOS="MLSJN.TTF"
+                        
+                            <OnPlatform x:TypeArguments="x:String"
+                                        Android="MLSJN.TTF#MLSJN"/>
+
+                        </Setter.Value>
+
+                    </Setter>
+                
+                -->
+                
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="TextColor" Value="White"/>
+
+            </Style>
+
+            <Style x:Key="Titulo" TargetType="Label" BaseResourceKey="FonteCustomizada">
+
+                <Setter Property="FontSize" Value="60"/>
+
+            </Style>
+
+            <Style x:Key="SubTitulo" TargetType="Label" BaseResourceKey="FonteCustomizada">
+
+                <Setter Property="FontSize" Value="24"/>
+
+            </Style>
+
+            <Style x:Key="Texto" TargetType="Label">
+
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="FontSize" Value="Medium"/>
+
+            </Style>
+
+            <Style x:Key="TextoCinza" TargetType="Label" BaseResourceKey="Texto">
+
+                <Setter Property="TextColor" Value="Gray"/>
+
+            </Style>
+
+            <Style x:Key="TextoBranco" TargetType="Label" BaseResourceKey="Texto">
+
+                <Setter Property="TextColor" Value="White"/>
+
+            </Style>
+
+        </ResourceDictionary>
+
+    </Application.Resources>
+    
+</Application>
