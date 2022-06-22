@@ -8,27 +8,19 @@
         <ResourceDictionary>
 
             <Style x:Key="FonteCustomizada" TargetType="Label">
-                
-                <!--
-                
-                    Este conteúdo comentado será adicionado ao projeto em breve.
-                
-                    <Setter Property="FontFamily">
 
-                        <Setter.Value>
+                <Setter Property="FontFamily">
 
-                            Como esse aplicativo não possui a versão IOS, não mudaremos a fonte do IOS, mas
-                            caso quisessemos fazer isso, basta adicionar IOS="MLSJN.TTF"
-                        
-                            <OnPlatform x:TypeArguments="x:String"
-                                        Android="MLSJN.TTF#MLSJN"/>
+                    <Setter.Value>
 
-                        </Setter.Value>
+                        <OnPlatform x:TypeArguments="x:String" 
+                                    iOS="Brand New Retro.ttf"
+                                    Android="Brand New Retro.ttf#Brand New Retro"/>
 
-                    </Setter>
-                
-                -->
-                
+                    </Setter.Value>
+
+                </Setter>
+
                 <Setter Property="HorizontalOptions" Value="Center"/>
                 <Setter Property="VerticalOptions" Value="Center"/>
                 <Setter Property="TextColor" Value="White"/>
@@ -37,13 +29,13 @@
 
             <Style x:Key="Titulo" TargetType="Label" BaseResourceKey="FonteCustomizada">
 
-                <Setter Property="FontSize" Value="60"/>
+                <Setter Property="FontSize" Value="57"/>
 
             </Style>
 
             <Style x:Key="SubTitulo" TargetType="Label" BaseResourceKey="FonteCustomizada">
 
-                <Setter Property="FontSize" Value="24"/>
+                <Setter Property="FontSize" Value="22"/>
 
             </Style>
 
